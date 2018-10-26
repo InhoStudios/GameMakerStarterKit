@@ -16,7 +16,6 @@
     <script>scripts\get_input.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_platformer</object>
     <object>objects\obj_top_down</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_enemy</object>
@@ -24,7 +23,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_top_down</room>
-    <room>rooms\rm_platformer</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
