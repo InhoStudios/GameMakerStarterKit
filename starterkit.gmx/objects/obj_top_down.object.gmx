@@ -30,6 +30,8 @@ movespeed = 4;  // movement speed
 hsp = 0;        // horizontal speed
 vsp = 0;        // vertical speed
 dir = 0;        // movement direction
+hp = 10;
+maxhp = hp;
 </string>
           </argument>
         </arguments>
@@ -88,6 +90,34 @@ y += vsp;
 if(hsp != 0 || vsp != 0){
     image_angle = dir;
 }
+
+if(hp &lt;= 0){
+    // died
+    room_restart();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(32,32,string(hp));
 </string>
           </argument>
         </arguments>
