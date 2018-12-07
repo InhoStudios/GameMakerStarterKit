@@ -23,8 +23,8 @@
     <object>objects\input</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_2</room>
     <room>rooms\rm_top_down</room>
+    <room>rooms\rm_platformer</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
